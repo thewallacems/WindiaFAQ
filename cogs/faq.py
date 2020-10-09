@@ -1,9 +1,9 @@
-from cogs.utils import FAQDatabase
+import os.path
+
 from discord.ext import commands
 
 import main
-import os.path
-import sqlite3
+from cogs.utils import FAQDatabase
 
 DB_PATH = f'sqlite:///{os.path.join(os.path.dirname(main.__file__), "windia.db")}'
 
