@@ -1,4 +1,5 @@
 import math
+from datetime import datetime
 from typing import Optional
 
 import discord
@@ -10,6 +11,15 @@ from cogs.utils import simulate_ees
 class UtilityCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
+
+    @commands.command(
+        name='time',
+        description='Displays the current server time',
+        usage='',
+    )
+    async def time_command(self, ctx):
+        time = datetime.strftime('%d %b, %Y %H:%M:%S')
+        return ctx.send(f'The current server time is: {time}')
 
     @commands.command(
         name='id',
@@ -76,16 +86,6 @@ class UtilityCog(commands.Cog):
         embed.set_author(name=f'{ctx.author}', icon_url=ctx.author.avatar_url)
 
         return await ctx.send(embed=embed)
-
-    @ees_command.error
-    async def ees_error(self, ctx, error):
-        if error in (commands.MissingRequiredArgument, commands.ArgumentParsingError, commands.ConversionError,
-                     commands.TooManyArguments, commands.UserInputError):
-            return await ctx.send(
-                f'Usage: {self.bot.command_prefix}{ctx.invoked_with} <start-end> <protect delta> <optional samples>\n'
-                f'Protect Delta - how many stars before the checkpoints to start using SF Protection Scrolls '
-                f'i.e. 3 will use Star Force Protection scrolls at 2 stars and 7 stars.'
-            )
 
 
 def setup(bot):
