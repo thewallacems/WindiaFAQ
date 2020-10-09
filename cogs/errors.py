@@ -1,7 +1,8 @@
-from discord.ext import commands
+import sqlite3
 import sys
 import traceback
-import sqlite3
+
+from discord.ext import commands
 
 
 class ErrorsCog(commands.Cog):

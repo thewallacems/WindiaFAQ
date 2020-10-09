@@ -1,7 +1,7 @@
+import math
+
 from sympy import Symbol
 from sympy.solvers import solve
-
-import math
 
 
 def calc_magic(monster_hp: int, modifier: float = 1.0):

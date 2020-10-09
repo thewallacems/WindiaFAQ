@@ -1,13 +1,11 @@
-from bot import WindiaFAQ
+import os.path
+import traceback
 from configparser import ConfigParser
 
+import discord
 from discord.ext import commands
 
-import os
-import os.path
-import discord
-import traceback
-
+from bot import WindiaFAQ
 
 CONFIG_PATH = os.path.join(os.path.dirname(__file__), 'windia.ini')
 config = ConfigParser()
@@ -41,7 +39,6 @@ for cog in cogs:
         print(f'An unhandled error was thrown while loading {cog}')
         traceback.print_exc()
         continue
-
 
 if __name__ == '__main__':
     bot.run(token)

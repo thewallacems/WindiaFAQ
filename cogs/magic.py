@@ -1,8 +1,9 @@
-from discord.ext import commands
-from cogs.utils import calc_magic
-
 import re
+
 import discord
+from discord.ext import commands
+
+from cogs.utils import calc_magic
 
 
 class MagicCog(commands.Cog):
@@ -46,7 +47,8 @@ class MagicCog(commands.Cog):
             magic = calc_magic(monster_hp=hp, modifier=modifier)
             magic_msg += f'\nMagic: {magic}'
 
-        embed = discord.Embed(title='Magic Calculator', description=f'The magic required to one shot a monster with {hp} HP')
+        embed = discord.Embed(title='Magic Calculator',
+                              description=f'The magic required to one shot a monster with {hp} HP')
         embed.add_field(name='Magic Required', value=magic_msg, inline=True)
         embed.add_field(name='Modifiers', value=modifiers_msg, inline=True)
         embed.set_author(name=f'{ctx.author}', icon_url=ctx.author.avatar_url)
