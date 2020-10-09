@@ -46,7 +46,7 @@ class UtilityCog(commands.Cog):
         if not windia_bot or not windia_bot.activity:
             return await ctx.send('I cannot get the online count currently.')
 
-        online_count = windia_bot.activity.name[-2:]
+        online_count = windia_bot.activity.name.split(' ')[3]
         return await ctx.send(f'Online Users: {online_count}')
 
     @commands.command(
