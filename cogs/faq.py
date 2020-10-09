@@ -48,12 +48,6 @@ class FAQCog(commands.Cog):
         if message.author.bot:
             return
 
-        windia_guild_id = 610212514856435719
-        if message.guild and message.guild.id == windia_guild_id:
-            if message.channel.id != self.bot.config.getint('Bot', 'Channel'):
-                if not await self._is_elevated_user(message.channel, message.author):
-                    return await message.channel.send('Please use the bot channel.')
-
         content = message.content
         if not content.startswith(self.bot.command_prefix):
             return
@@ -61,6 +55,12 @@ class FAQCog(commands.Cog):
         command = content[len(self.bot.command_prefix):].split(' ')[0]
         if self.bot.get_command(command):
             return
+
+        windia_guild_id = 610212514856435719
+        if message.guild and message.guild.id == windia_guild_id:
+            if message.channel.id != self.bot.config.getint('Bot', 'Channel'):
+                if not await self._is_elevated_user(message.channel, message.author):
+                    return await message.channel.send('Please use the bot channel.')
 
         if not self.db.is_connected():
             await self.db.connect()
