@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b847c16a-305e-40ee-8e29-a12410044f2e" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1icIjEowqahSiOWqO5LQRsSqOqn" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cogs" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.main">
+    <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="WindiaFAQ" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="bot" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="WindiaFAQ" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bot.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="WindiaFAQ" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.bot" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b847c16a-305e-40ee-8e29-a12410044f2e" name="Default Changelist" comment="" />
+      <created>1602200586576</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602200586576</updated>
+    </task>
+    <task id="LOCAL-00001" summary="add command check before perm check in faq">
+      <created>1602215026095</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602215026095</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Optimize imports">
+      <created>1602215134451</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602215134451</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Optimize imports">
+      <created>1602215143054</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602215143054</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Optimize imports">
+      <created>1602215152806</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1602215152806</updated>
+    </task>
+    <task id="LOCAL-00005" summary="remove .idea">
+      <created>1602215255665</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1602215255665</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add command check before perm check in faq" />
+    <MESSAGE value="Optimize imports" />
+    <MESSAGE value="remove .idea" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove .idea" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2344" y="213" width="1071" height="724" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602210485653">
+      <screen x="1920" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2344" y="213" width="1071" height="724" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.989/1920.23.1920.1057@1920.23.1920.1057" timestamp="1602210485653" />
+    <state x="2669" y="279" key="FileChooserDialogImpl" timestamp="1602210641381">
+      <screen x="1920" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2669" y="279" key="FileChooserDialogImpl/0.23.1920.989/1920.23.1920.1057@1920.23.1920.1057" timestamp="1602210641381" />
+    <state x="2757" y="425" key="Github.ShareDialog" timestamp="1602210737121">
+      <screen x="1920" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2757" y="425" key="Github.ShareDialog/0.23.1920.989/1920.23.1920.1057@1920.23.1920.1057" timestamp="1602210737121" />
+    <state width="958" height="263" key="GridCell.Tab.0.bottom" timestamp="1602214943618">
+      <screen x="1920" y="23" width="1920" height="1057" />
+    </state>
+    <state width="958" height="263" key="GridCell.Tab.0.bottom/0.23.1920.989/1920.23.1920.1057@1920.23.1920.1057" timestamp="1602214943618" />
+    <state width="958" height="263" key="GridCell.Tab.0.center" timestamp="1602214943618">
+      <screen x="1920" y="23" width="1920" height="1057" />
+    </state>
+    <state width="958" height="263" key="GridCell.Tab.0.center/0.23.1920.989/1920.23.1920.1057@1920.23.1920.1057" timestamp="1602214943618" />
+    <state width="958" height="263" key="GridCell.Tab.0.left" timestamp="1602214943618">
+      <screen x="1920" y="23" width="1920" height="1057" />
+    </state>
+    <state width="958" height="263" key="GridCell.Tab.0.left/0.23.1920.989/1920.23.1920.1057@1920.23.1920.1057" timestamp="1602214943618" />
+    <state width="958" height="263" key="GridCell.Tab.0.right" timestamp="1602214943618">
+      <screen x="1920" y="23" width="1920" height="1057" />
+    </state>
+    <state width="958" height="263" key="GridCell.Tab.0.right/0.23.1920.989/1920.23.1920.1057@1920.23.1920.1057" timestamp="1602214943618" />
+    <state x="2010" y="253" key="Vcs.Push.Dialog.v2" timestamp="1602215256829">
+      <screen x="1920" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2010" y="253" key="Vcs.Push.Dialog.v2/0.23.1920.989/1920.23.1920.1057@1920.23.1920.1057" timestamp="1602215256829" />
+    <state x="2589" y="126" width="584" height="783" key="find.popup" timestamp="1602214957390">
+      <screen x="1920" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2589" y="126" width="584" height="783" key="find.popup/0.23.1920.989/1920.23.1920.1057@1920.23.1920.1057" timestamp="1602214957390" />
+    <state x="2545" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1602209220243">
+      <screen x="1920" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2545" y="258" width="670" height="676" key="search.everywhere.popup/0.23.1920.989/1920.23.1920.1057@1920.23.1920.1057" timestamp="1602209220243" />
+  </component>
+</project>
