@@ -1,9 +1,10 @@
-from discord.ext import commands
+import math
 from typing import Optional
-from cogs.utils import simulate_ees
 
 import discord
-import math
+from discord.ext import commands
+
+from cogs.utils import simulate_ees
 
 
 class UtilityCog(commands.Cog):
