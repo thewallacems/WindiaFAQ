@@ -18,7 +18,7 @@ class UtilityCog(commands.Cog):
         usage='',
     )
     async def time_command(self, ctx):
-        time = datetime.strftime('%d %b, %Y %H:%M:%S')
+        time = datetime.utcnow().strftime('%d %b, %Y %H:%M:%S')
         return await ctx.send(f'The current server time is: {time}')
 
     @commands.command(
