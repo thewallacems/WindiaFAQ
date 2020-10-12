@@ -18,11 +18,13 @@ class ConfigLoader(ABC):
 class ConfigINILoader(ConfigLoader):
     def load(self) -> dict:
         config = ConfigParser()
+        config.optionxform = str
         config.read(self.file_path)
 
         config_dict = dict()
 
         for section in config.sections():
+            config_dict[section] = dict()
             for key, value in config.items(section):
                 if value.isdigit():
                     config_dict[section][key] = int(value)
