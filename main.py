@@ -5,9 +5,9 @@ from discord.ext import commands
 
 from bot import WindiaFAQ
 from intentsloader import IntentsCSVLoader
-from configloader import ConfigLoader
+from configloader import ConfigINILoader
 
-config = ConfigLoader('windia.ini').load()
+config = ConfigINILoader('windia.ini').load()
 
 token = config['Bot']['Token']
 prefix = config['Bot']['Prefix']
