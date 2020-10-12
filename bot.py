@@ -22,7 +22,7 @@ class WindiaFAQ(commands.Bot):
 
     @commands.check
     async def can_invoke(self, ctx):
-        bot_channel_id = self.config.getint('Bot', 'Channel')
+        bot_channel_id = self.config['Bot']['Channel']
         return (ctx.guild or ctx.channel.id == bot_channel_id) \
                or ctx.author.permissions_in(ctx.channel).manage_messages \
                or await self.is_owner(ctx.author)

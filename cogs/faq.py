@@ -1,11 +1,9 @@
-import os.path
-
 from discord.ext import commands
 
-import main
+import asyncio
 from cogs.utils import FAQDatabase
 
-DB_PATH = f'sqlite:///{os.path.join(os.path.dirname(main.__file__), "windia.db")}'
+DB_PATH = 'sqlite:///windia.db'
 
 
 class FAQCog(commands.Cog):
@@ -58,7 +56,7 @@ class FAQCog(commands.Cog):
 
         windia_guild_id = 610212514856435719
         if message.guild and message.guild.id == windia_guild_id:
-            if message.channel.id != self.bot.config.getint('Bot', 'Channel'):
+            if message.channel.id != self.bot.config['Bot']['Channel']:
                 if not await self._is_elevated_user(message.channel, message.author):
                     return await message.channel.send('Please use the bot channel.')
 
@@ -75,8 +73,8 @@ class FAQCog(commands.Cog):
         if not self.db.is_connected():
             await self.db.connect()
 
-    async def cog_unload(self):
-        await self.db.disconnect()
+    def cog_unload(self):
+        asyncio.run(self.db.disconnect())
 
     async def cog_check(self, ctx):
         if not ctx.guild:

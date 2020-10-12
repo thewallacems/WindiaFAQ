@@ -1,25 +1,18 @@
 import os.path
 import traceback
-from configparser import ConfigParser
 
-import discord
 from discord.ext import commands
 
 from bot import WindiaFAQ
+from intentsloader import IntentsCSVLoader
+from configloader import ConfigLoader
 
-CONFIG_PATH = os.path.join(os.path.dirname(__file__), 'windia.ini')
-config = ConfigParser()
-config.read(CONFIG_PATH)
+config = ConfigLoader('windia.ini').load()
 
-token = config.get('Bot', 'Token')
-prefix = config.get('Bot', 'Prefix')
+token = config['Bot']['Token']
+prefix = config['Bot']['Prefix']
 
-intents = discord.Intents.none()
-intents.members = True
-intents.presences = True
-intents.messages = True
-intents.guilds = True
-
+intents = IntentsCSVLoader('intents.csv').load()
 bot = WindiaFAQ(prefix, config, intents)
 
 COGS_PATH = './cogs/'
