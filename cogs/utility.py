@@ -1,5 +1,5 @@
 import math
-from datetime import datetime
+from datetime import datetime, timedelta
 from typing import Optional
 
 import discord
@@ -19,7 +19,14 @@ class UtilityCog(commands.Cog):
     )
     async def time_command(self, ctx):
         time = datetime.utcnow().strftime('%d %b, %Y %H:%M:%S')
-        return await ctx.send(f'The current server time is: {time}')
+
+        tomorrow = datetime.utcnow() + timedelta(1)
+        midnight = datetime(year=tomorrow.year, month=tomorrow.month, day=tomorrow.day,
+                            hour=0, minute=0, second=0)
+        reset_delta = (midnight - datetime.utcnow())
+        time_until_reset = str(reset_delta).split('.')[0]
+
+        return await ctx.send(f'The current server time is: {time}\nTime until reset: {time_until_reset}')
 
     @commands.command(
         name='id',
