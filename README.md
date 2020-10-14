@@ -10,3 +10,16 @@ desired.
 Play Windia at: https://windia.me
 
 Join the Discord server: https://discord.gg/KNErjZ5
+
+
+# Setup
+This bot uses systemd to keep itself running.
+
+In terminal, type the following commands to get the bot started.
+
+```
+git clone https://github.com/thewallacems/WindiaFAQ.git
+cd WindiaFAQ
+sudo systemctl enable windiafaq
+sudo systemctl start windiafaq
+```
