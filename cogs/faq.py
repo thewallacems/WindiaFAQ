@@ -4,13 +4,11 @@ from discord.ext import commands
 
 from cogs.utils import FAQDatabase
 
-DB_PATH = 'sqlite:///windia.db'
-
 
 class FAQCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-        self.db = FAQDatabase(DB_PATH)
+        self.db = FAQDatabase(bot.config['FAQ']['Database'])
 
     @commands.command(
         name='add',
