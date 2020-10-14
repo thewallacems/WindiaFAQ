@@ -1,5 +1,5 @@
-from configparser import ConfigParser
 from abc import ABC, abstractmethod
+from configparser import ConfigParser
 
 
 def _is_bool(value: str):

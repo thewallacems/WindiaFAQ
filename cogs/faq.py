@@ -1,6 +1,7 @@
+import asyncio
+
 from discord.ext import commands
 
-import asyncio
 from cogs.utils import FAQDatabase
 
 DB_PATH = 'sqlite:///windia.db'

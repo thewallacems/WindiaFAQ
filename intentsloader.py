@@ -1,8 +1,7 @@
+import csv
 from abc import ABC, abstractmethod
 
-import csv
 import discord
-
 
 _INTENTS = {
     'guilds': False,

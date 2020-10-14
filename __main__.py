@@ -4,8 +4,8 @@ import traceback
 from discord.ext import commands
 
 from bot import WindiaFAQ
-from intentsloader import IntentsCSVLoader
 from configloader import ConfigINILoader
+from intentsloader import IntentsCSVLoader
 
 DIR = os.path.dirname(os.path.abspath(__file__))
 CONFIG_PATH = os.path.join(DIR, 'windia.ini')
@@ -14,6 +14,7 @@ COGS_PATH = os.path.join(DIR, 'cogs')
 
 config = ConfigINILoader(CONFIG_PATH).load()
 
+config['FAQ']['Database'] = os.path.join(DIR, config['FAQ']['Database'])
 token = config['Bot']['Token']
 prefix = config['Bot']['Prefix']
 
