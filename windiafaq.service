@@ -1,0 +1,12 @@
+[Unit]
+Description=WindiaFAQ Discord Bot service
+After=multi-user.target
+
+[Service]
+WorkingDirectory=/usr/ubuntu/WindiaFAQ
+Type=idle
+ExecStart=/usr/bin/python3.8 /usr/ubuntu/WindiaFAQ/__main__.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
