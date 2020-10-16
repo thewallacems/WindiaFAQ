@@ -14,7 +14,7 @@ COGS_PATH = os.path.join(DIR, 'cogs')
 
 config = ConfigINILoader(CONFIG_PATH).load()
 
-config['FAQ']['Database'] = os.path.join(DIR, config['FAQ']['Database'])
+config['FAQ']['Database'] = f"sqlite:///{os.path.join(DIR, config['FAQ']['Database'])}"
 token = config['Bot']['Token']
 prefix = config['Bot']['Prefix']
 
