@@ -18,11 +18,17 @@ class WindiaFAQ(commands.Bot):
         ctx = await self.get_context(message)
         if ctx.command is None:
             return
-        await self.invoke(ctx)
 
-    @commands.check
+        if await self.can_invoke(ctx):
+            return await self.invoke(ctx)
+        else:
+            return await ctx.send('Please use the bot channel.', delete_after=5.0)
+
     async def can_invoke(self, ctx):
+        if not ctx.guild:
+            return True
+
         bot_channel_id = self.config['Bot']['Channel']
-        return (ctx.guild or ctx.channel.id == bot_channel_id) \
+        return ctx.channel.id == bot_channel_id \
                or ctx.author.permissions_in(ctx.channel).manage_messages \
                or await self.is_owner(ctx.author)

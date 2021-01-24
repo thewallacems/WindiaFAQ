@@ -53,16 +53,19 @@ class FAQCog(commands.Cog):
         if self.bot.get_command(command):
             return
 
-        windia_guild_id = 610212514856435719
-        if message.guild and message.guild.id == windia_guild_id:
-            if message.channel.id != self.bot.config['Bot']['Channel']:
-                if not await self._is_elevated_user(message.channel, message.author):
-                    return await message.channel.send('Please use the bot channel.')
-
         if not self.db.is_connected():
             await self.db.connect()
 
         resp = await self.db.request(command)
+        if not resp:
+            return
+
+        windia_guild_id = 610212514856435719
+        if message.guild and message.guild.id == windia_guild_id:
+            if message.channel.id != self.bot.config['Bot']['Channel']:
+                if not await self._is_elevated_user(message.channel, message.author):
+                    return await message.channel.send('Please use the bot channel.', delete_after=5.0)
+
         if isinstance(resp, str):
             return await message.channel.send(resp)
         elif isinstance(resp, list):
